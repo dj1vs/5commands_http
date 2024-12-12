@@ -4,7 +4,6 @@ Interpreter for 5command esoteric language, wrapped into an HTTP API.
 
 ## 5command
 
-> [!quote]
 > 5command is an esoteric programming language created by User:Icepy in 2014. 5command has a very small command set of only 5 commands. 5command is a tape based language which has an infinite amount of slots. It has a debug mode that can be set to true or false in a interpreter. debug mode is automatically false. Also, anything that is not valid syntax, is a comment. 5command was built to print out very large numbers, in a small amount of time and space. 
 
 ### Commands
@@ -21,10 +20,4 @@ v  decrement where the pointer is pointing at
 
 Receives `5command` code via `/interpret` handle.
 
-Request JSON structure:
-
-```json
-{
-    "code": ""
-}
-```
+Receives raw code via request body and responds with raw string, which corresponds to programms stdout.
